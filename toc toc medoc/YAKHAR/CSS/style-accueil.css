@@ -1,0 +1,422 @@
+
+/* General styles  */
+body{
+    font-family:'Roboto Condensed';
+}
+
+.sections{
+    padding: 20px 0;
+}
+
+/*.over-lay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left 0;
+    right: 0;
+    background: rgba(0,0,0,0,5);
+}*/
+/* Header*/
+
+header{
+    height: 80px;
+    padding: 0;
+    border-bottom: 1px solid #000;
+     
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  
+}
+
+header .logo h2{
+    font-size: 35px;
+    color: white;
+    padding: 12px 0;
+    background-color: transparent;
+   
+}
+
+header nav .nav-list{
+    list-style: none;
+    /*placer les lien de la nav sur une meme ligne */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: fixed; 
+
+    
+   
+ 
+}
+
+
+
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 10;
+    display: none;
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 25px 60px;
+    /*margin: 0px 25px;*/
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    /*border: 1px solid black;
+    border-radius: 5px;*/
+    height: 80px;
+    
+
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+   
+
+
+    
+}
+
+header nav .nav-list .list a:hover{
+    text-decoration: none;
+   
+    background-color: #111;
+  
+   
+    
+}
+
+/*.sticky{
+    background-color: #000;
+    color: #fff;
+}*/
+
+/* partie responsive */
+@media (max-width:575px){
+    /* masquer le menu */
+    header nav .nav-list{
+        display: none;
+        text-align:center;
+        padding: 0;
+    }
+    
+    header .logo{
+        text-align: center;
+    }
+    
+    /* afficher l'icone nav */
+    header i.icon{
+        display: block;
+    }
+}
+
+/* home section*/
+.home{
+    height: 550px;
+    background-image: url('../Image/img-home-5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.home .home-title {
+    color:black;
+    font-size: 45px;
+    margin-bottom: 25px;
+     font-weight: bold;
+}
+
+.home .home-desc{
+    color: black;
+    font-size: 18px;
+    
+}
+
+.home .button{
+    background-color: #17a2b8;
+    color: #000;
+    font-weight: bold;
+    width: 160px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+@media (max-width:575px){
+    .home .home-title{
+        font-size:30px;
+        
+    }
+    
+    .home .button{
+        margin-bottom: 15px; 
+    }
+}
+
+
+
+
+
+
+
+/* css contact form */
+
+.content {
+  
+    bottom: 20px;
+    background:#333333;
+    color: #000000;
+    width: 100%;
+    -ms-flex: 100%; /* IE10 */
+    flex: 100%;
+    padding: 20px;
+  }
+  
+  .bouton #input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*resize: vertical;*/
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color : #17A2B8;
+  }
+  
+  .bouton #input[type=submit] {
+    background-color: #17A2B8;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+   
+   
+  }
+  
+  .bouton #input[type=submit]:hover {
+    background-color:  #f2f2f2;
+  }
+  
+  .fomulaire {
+    margin : 1px;
+  }
+
+  .formulaire.p {
+    text-align:"center"; 
+    color: #f2f2f2;
+    font-size: 18px;
+    display: block;
+  }
+  
+  .bouton {
+    margin : 20px;
+    width: 50%;
+    margin-left: 325px;
+  }
+  
+  .col-25 {
+    
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+   
+    width: 100%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
+/* conacter nous google*/
+
+
+
+/* style the container */
+.cont {
+    position: relative;
+    border-radius: 5px;
+    background:#333333;
+    padding: 20px 0 30px 0;
+  } 
+  
+  /* style inputs and link buttons */
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #17A2B8;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #17A2B8;
+  }
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  
+  
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
+  }
+  /* Footer */
+  .footer {
+      padding: 20px;
+      text-align: center;
+      background: #f2f2f2;
+      font-size: 9px;
+    }
+
+
+
+
+ 
+  /* Footer */
+  .footer {
+      padding: 10px;
+      text-align: center;
+      background: #fff;
+      font-size: 5px;
+      margin: 20px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
