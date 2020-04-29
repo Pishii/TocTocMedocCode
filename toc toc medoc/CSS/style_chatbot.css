@@ -1,0 +1,167 @@
+
+   /* css du menu */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+      height: 60px; /*h #333*/
+      text-align: center;
+    }
+
+    li {
+      margin : auto;
+      padding: 0;
+      float: left;
+      /*width: 170px;*/
+     
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    li a:hover {
+      /*background-color: #111;
+      height:60px;*/
+      text-decoration: none;
+      color:green;
+     
+    }
+
+    /* superposer le sous menu sur ce qui a en dessous */ 
+    li ul{
+      position:absolute;
+    }
+    
+
+    /*on ca che les sous items (le sous menu) */
+
+    ul li ul{
+      display:none;
+      
+    }
+
+    /* affichage du sous menu au survol */
+    ul li:hover ul{
+      display:block;
+      height: 150px;
+  
+    }
+
+    ul li:hover .trait{
+      width: 210px;
+    
+    }
+
+    li:hover ul li{
+      float:none;
+      width: 210px;
+     
+    }
+
+  
+  /*CSS du tchat */
+  body {
+    /*margin: 0 auto;*/
+    /*max-width: 800px;*/
+    /*padding: 0 20px;*/
+  }
+  
+  #ref{
+    max-width: 800px;
+   
+  }
+
+  .container1 {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  .container1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container1 img {
+    float: left;
+    max-width: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container1 img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    margin-top: 200px;
+    background-color: #ddd;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+  }
+  .square {
+    height: auto;
+    width: 810px;
+    padding: 8px;
+    background-color: #fff;
+    border: 2px solid #dedede;
+    margin-top: 100px;
+    margin-left: 210px;
+   
+  }
+
+  
+    /*footrt*/
+    footer{
+      background-color: black;
+      color:white;
+      text-decoration: none;
+    }
+
+    .foot a{
+      text-decoration: none;
+      color:white;
+    }
+
+    .foot a:hover{
+      text-decoration: none;
+      color:green;
+     
+    }
+
+    .foot h6{
+      color: green;
+    }
